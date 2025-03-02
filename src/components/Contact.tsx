@@ -15,14 +15,11 @@ const Contact = () => {
     message: "",
   });
 
-  const latitude = 40.459842707940545;
-const longitude = -104.53075392332764;
+  const hasCoordinates = information.latitude && information.longitude;
 
-const mapSrc = `https://www.google.com/maps?q=${latitude},${longitude}&hl=en&z=14&output=embed`;
-
-
-  // const encodedLocation = encodeURIComponent(`${information.address}, ${information.city}, ${information.state} ${information.zipCode}`);
-  // const mapSrc = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.7227817835845!2d-122.4194!3d37.7749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808eb456e36f%3A0xe3898438a5b5f7e0!2s${encodedLocation}!5e0!3m2!1sen!2sus!4v1663180036428!5m2!1sen!2sus`;
+  const mapSrc = hasCoordinates
+  ? `https://www.google.com/maps?q=${+information.latitude},${+information.longitude}&hl=en&z=14&output=embed`
+  : `https://www.google.com/maps?q=${encodeURIComponent(`${information.address}, ${information.city}, ${information.state} ${information.zipCode}`)}&hl=en&z=14&output=embed`;
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
