@@ -1,7 +1,7 @@
 
 import { CheckCircle, Award, Clock, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { IMAGES } from "../assets/images";
+import { IMAGES } from "../assets/index";
 
 const features = [
   {

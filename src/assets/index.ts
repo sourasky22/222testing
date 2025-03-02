@@ -18,6 +18,13 @@ import project4Image from './projects-4.jpg'; // Project 4
 import project5Image from './projects-5.jpg'; // Project 5
 import project6Image from './projects-6.jpg'; // Project 6
 
+// Since we don't have these specific images yet, we'll use existing images as placeholders
+// About section images
+const aboutImage = heroImage; // Using hero image as a placeholder for about
+const person1Image = service1Image; // Using service images as placeholders for team members
+const person2Image = service2Image;
+const person3Image = service3Image;
+
 export const IMAGES = {
   LOGO: logoImage,
   HERO: heroImage,
@@ -33,6 +40,11 @@ export const IMAGES = {
   PROJECT_4: project4Image,
   PROJECT_5: project5Image,
   PROJECT_6: project6Image,
+  // Add the missing image references
+  ABOUT: aboutImage,
+  PERSON_1: person1Image,
+  PERSON_2: person2Image,
+  PERSON_3: person3Image,
 };
 
 export default IMAGES;
