@@ -1,13 +1,13 @@
 
 export const information = {
-  businessName: "Premium Garage Doors",
-  address: "2500 West End Ave",
-  city: "Nashville",
-  state: "TN",
-  zipCode: "37203",
-  phone: "555-123-4567",
-  phoneDisplay: "(555) 123-4567",
-  email: "info@premiumgarage.com",
+  businessName: "Silverback Garage Door Company LLC",
+  address: "27750 Co Rd 66",
+  city: "Gill",
+  state: "CO",
+  zipCode: "80624",
+  phone: "970-351-6172",
+  phoneDisplay: "(970) 351-6172",
+  email: "info@silverbackgaragedoorcompany.com",
   workingHours: "Mon-Sat: 7AM - 8PM"
 };
 
