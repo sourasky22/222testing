@@ -16,7 +16,7 @@ const Footer = () => {
             <a href={`tel:${information.phone}`} className="text-gray-700 hover:text-blue-600 transition-colors">
               {information.phoneDisplay}
             </a>
-            <a href={`mailto:${information.email}`} className="text-gray-700 hover:text-blue-600 transition-colors">
+            <a href={`mailto:${information.email}`} className="text-gray-700 hover:text-blue-600 transition-colors break-words">
               {information.email}
             </a>
           </div>

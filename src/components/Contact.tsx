@@ -165,7 +165,7 @@ const Contact = () => {
                     {item.icon}
                   </div>
                   <h4 className="text-lg font-semibold text-garage-darkBlue mb-1">{item.title}</h4>
-                  <p className="text-gray-600">{item.details}</p>
+                  <p className="text-gray-600 break-words">{item.details}</p>
                 </div>
               ))}
             </div>

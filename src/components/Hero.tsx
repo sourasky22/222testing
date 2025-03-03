@@ -29,12 +29,12 @@ const Hero = () => {
             
             <div className="flex flex-wrap gap-4 mt-2 text-gray-600">
               <div className="flex items-center gap-2">
-                <MapPin className="h-5 w-5 text-garage-blue" />
-                <span>{information.address}, {information.city}, {information.state} {information.zipCode}</span>
+                <MapPin className="h-5 w-5 text-garage-blue flex-shrink-0" />
+                <span className="break-words">{information.address}, {information.city}, {information.state} {information.zipCode}</span>
               </div>
               <div className="flex items-center gap-2">
-                <Mail className="h-5 w-5 text-garage-blue" />
-                <a href={`mailto:${information.email}`} className="hover:text-garage-blue transition-colors">
+                <Mail className="h-5 w-5 text-garage-blue flex-shrink-0" />
+                <a href={`mailto:${information.email}`} className="hover:text-garage-blue transition-colors break-words">
                   {information.email}
                 </a>
               </div>
